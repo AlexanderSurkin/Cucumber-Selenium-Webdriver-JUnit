@@ -514,7 +514,7 @@ public class CreatingInventoryObjects extends ChromedriverAndOthersMethods {
             }
         }
 
-        WebElement element2 = getDriver().findElement(By.xpath("/html/body/form/div/div[2]/div/ul/li/span/span[3]/a"));
+        WebElement element2 = getDriver().findElement(By.xpath(".//a[contains(text(), 'Country1989')]"));
         JavascriptExecutor executor2 = (JavascriptExecutor)getDriver();
         executor2.executeScript("arguments[0].click();", element2);
         CreatingInventoryObjects.getScreenShot("TC_6_1_7_Step15.png");
@@ -560,8 +560,7 @@ public class CreatingInventoryObjects extends ChromedriverAndOthersMethods {
         CreatingInventoryObjects.getScreenShot("TC_6_2_1_Step3.png");
 
         //Нажать на кнопку 'Edit'
-        WebElement element3 = getDriver().findElement(By.xpath("/html/body/div[1]/div[3]/form/div/div/div[1]/" +
-                "div/div[1]/table/tbody/tr/td/a"));
+        WebElement element3 = getDriver().findElement(By.xpath("//*[@id=\"table_header\"]/table/tbody/tr/td/a"));
         JavascriptExecutor executor3 = (JavascriptExecutor)getDriver();
         executor3.executeScript("arguments[0].click();", element3);
         CreatingInventoryObjects.getScreenShot("TC_6_2_1_Step4.png");
